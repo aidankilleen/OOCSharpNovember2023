@@ -1,0 +1,41 @@
+﻿@page
+@using MemberDao;
+@model WebAppHelloWorld.Pages.MembersModel
+@{
+
+    Member m = new Member { 
+        Id = 1, 
+        Name = "Alice", 
+        Email = "alice@gmail.com", 
+        Active = true 
+    };
+
+    MemberDao dao = new MemberDao();
+    var members = dao.GetMembers();
+    dao.Close();
+
+}
+
+<h1>Members</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Member member in members)
+        {
+            <tr>
+                <td>@member.Id</td>
+                <td>@member.Name</td>
+                <td>@member.Email</td>
+                <td>@(member.Active ? "Active" : "Inactive")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

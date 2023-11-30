@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    h1 {
+        color: red;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Yes</p>
+
+    @{
+        string name = "Aidan";
+    }
+
+    <h2>@name</h2>
+
+    <ul>
+    @for (int i = 1; i <= 6; i++)
+    {
+        <li>@i</li>
+    }
+    </ul>
+
+
+    @for (int i = 1; i<=6; i++)
+    {
+        @Html.Raw($"<h{i}>")
+            @Html.Raw($"Heading {i}")
+        @Html.Raw($"</h{i}>")
+    }
+
+
+
+
+
+
+
+</div>
+<script>
+    //alert("some js too");
+</script>

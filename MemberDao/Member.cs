@@ -13,7 +13,7 @@ namespace MemberDao
         public string Email { get; set; }
         public bool Active { get; set; }
 
-        public override string? ToString()
+        public override string ToString()
         {
             return $"{ Id } { Name } { Email } { (Active ? "Active" : "Inactive") }";
         }

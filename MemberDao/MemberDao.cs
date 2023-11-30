@@ -94,7 +94,7 @@ namespace MemberDao
         
         public Member AddMember(Member member)
         {
-            string sql = @$"INSERT INTO members
+            string sql = $@"INSERT INTO members
                             (name, email, active)
                             VALUES(
                                 '{ member.Name }', 

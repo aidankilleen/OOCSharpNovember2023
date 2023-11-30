@@ -3,7 +3,7 @@
 Console.WriteLine("MemberDao Investigation");
 
 
-MemberDao dao = new MemberDao();
+MemberDao.MemberDao dao = new MemberDao.MemberDao();
 
 var memberToChange = dao.GetMember(1);
 memberToChange.Name = "Alice";

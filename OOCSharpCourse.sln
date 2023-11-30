@@ -13,25 +13,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringInvestigation", "Stri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingCardExample", "PlayingCardExample\PlayingCardExample.csproj", "{CCB9754A-1078-4C29-A7CA-839A5A015422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem", "HRSystem\HRSystem.csproj", "{EEE2C684-BA87-4440-805E-6E7D5B0E5F84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRSystem", "HRSystem\HRSystem.csproj", "{EEE2C684-BA87-4440-805E-6E7D5B0E5F84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBaseClassInvestigation", "CommonBaseClassInvestigation\CommonBaseClassInvestigation.csproj", "{2A0095A7-6B41-42A4-9E05-B774D7A8AEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonBaseClassInvestigation", "CommonBaseClassInvestigation\CommonBaseClassInvestigation.csproj", "{2A0095A7-6B41-42A4-9E05-B774D7A8AEC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericListInvestigation", "GenericListInvestigation\GenericListInvestigation.csproj", "{45C26E59-A5AC-448B-8A4E-AF4636FD4F7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericListInvestigation", "GenericListInvestigation\GenericListInvestigation.csproj", "{45C26E59-A5AC-448B-8A4E-AF4636FD4F7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticInvestigation", "StaticInvestigation\StaticInvestigation.csproj", "{9CB26F0B-4C83-4FC6-868D-4C66148F31A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticInvestigation", "StaticInvestigation\StaticInvestigation.csproj", "{9CB26F0B-4C83-4FC6-868D-4C66148F31A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBHelloWorld", "DBHelloWorld\DBHelloWorld.csproj", "{2759EE1E-3448-4173-8DD3-B40B4DABC341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBHelloWorld", "DBHelloWorld\DBHelloWorld.csproj", "{2759EE1E-3448-4173-8DD3-B40B4DABC341}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemberDaoInvestigation", "MemberDaoInvestigation\MemberDaoInvestigation.csproj", "{C0870DA7-2A07-4101-B334-0480C7BF6602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemberDaoInvestigation", "MemberDaoInvestigation\MemberDaoInvestigation.csproj", "{C0870DA7-2A07-4101-B334-0480C7BF6602}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MemberDao", "MemberDao\MemberDao.shproj", "{12CE3F63-068D-4A87-8556-3E6A44A6AF30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedProjectInvestigation", "SharedProjectInvestigation\SharedProjectInvestigation.csproj", "{8CEF7D74-6746-420B-9619-B294962794DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedProjectInvestigation", "SharedProjectInvestigation\SharedProjectInvestigation.csproj", "{8CEF7D74-6746-420B-9619-B294962794DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionInvestigation", "ExceptionInvestigation\ExceptionInvestigation.csproj", "{B153FAC0-A6C1-4153-8063-2616E09B7BBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionInvestigation", "ExceptionInvestigation\ExceptionInvestigation.csproj", "{B153FAC0-A6C1-4153-8063-2616E09B7BBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaInvestigation", "LambdaInvestigation\LambdaInvestigation.csproj", "{46E92167-F949-4B68-A818-3C5987D7B165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaInvestigation", "LambdaInvestigation\LambdaInvestigation.csproj", "{46E92167-F949-4B68-A818-3C5987D7B165}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PartialClassInvestigation", "PartialClassInvestigation\PartialClassInvestigation.csproj", "{434EFD10-F9B3-47C3-9914-BA705E3BCB27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsHelloWorld", "WindowsFormsHelloWorld\WindowsFormsHelloWorld.csproj", "{89138ECC-85B1-4ECB-B9EC-01BBCCD8875A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppHelloWorld", "WebAppHelloWorld\WebAppHelloWorld.csproj", "{B095CB80-3DB4-4D9E-8E39-BDCD39F3091B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{17B7106B-1577-4281-AFB1-984F15FCEBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{3F48D7B3-8CAC-46DE-866C-35FE84B67725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +105,26 @@ Global
 		{46E92167-F949-4B68-A818-3C5987D7B165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E92167-F949-4B68-A818-3C5987D7B165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E92167-F949-4B68-A818-3C5987D7B165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434EFD10-F9B3-47C3-9914-BA705E3BCB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434EFD10-F9B3-47C3-9914-BA705E3BCB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434EFD10-F9B3-47C3-9914-BA705E3BCB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434EFD10-F9B3-47C3-9914-BA705E3BCB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89138ECC-85B1-4ECB-B9EC-01BBCCD8875A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89138ECC-85B1-4ECB-B9EC-01BBCCD8875A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89138ECC-85B1-4ECB-B9EC-01BBCCD8875A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89138ECC-85B1-4ECB-B9EC-01BBCCD8875A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B095CB80-3DB4-4D9E-8E39-BDCD39F3091B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B095CB80-3DB4-4D9E-8E39-BDCD39F3091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B095CB80-3DB4-4D9E-8E39-BDCD39F3091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B095CB80-3DB4-4D9E-8E39-BDCD39F3091B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B7106B-1577-4281-AFB1-984F15FCEBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B7106B-1577-4281-AFB1-984F15FCEBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B7106B-1577-4281-AFB1-984F15FCEBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B7106B-1577-4281-AFB1-984F15FCEBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +134,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MemberDao\MemberDao.projitems*{12ce3f63-068d-4a87-8556-3e6a44a6af30}*SharedItemsImports = 13
+		MemberDao\MemberDao.projitems*{17b7106b-1577-4281-afb1-984f15fcebdc}*SharedItemsImports = 5
+		MemberDao\MemberDao.projitems*{3f48d7b3-8cac-46de-866c-35fe84b67725}*SharedItemsImports = 5
+		MemberDao\MemberDao.projitems*{46e92167-f949-4b68-a818-3c5987d7b165}*SharedItemsImports = 5
+		MemberDao\MemberDao.projitems*{89138ecc-85b1-4ecb-b9ec-01bbccd8875a}*SharedItemsImports = 4
 		MemberDao\MemberDao.projitems*{8cef7d74-6746-420b-9619-b294962794de}*SharedItemsImports = 5
+		MemberDao\MemberDao.projitems*{b095cb80-3db4-4d9e-8e39-bdcd39f3091b}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

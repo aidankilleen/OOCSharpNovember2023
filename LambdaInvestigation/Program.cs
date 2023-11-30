@@ -27,6 +27,16 @@ internal class Program
 
         int[] list = { 1, 4, 3, 5, 6, 8, 7, 10, 9, 3, 2, 1 };
 
+        Console.WriteLine("Odd numbers:");
         ProcessList(list, CheckForOdd);
+
+
+        Console.WriteLine("Even numbers:");
+        ProcessList(list, i => i % 2 == 0);
+
+
+
+
+
     }
 }

@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{3F48D7B3-8CAC-46DE-866C-35FE84B67725}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsWithDao", "WinFormsWithDao\WinFormsWithDao.csproj", "{192513FD-63CA-4342-A87E-CFFBA8F2C8C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F48D7B3-8CAC-46DE-866C-35FE84B67725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192513FD-63CA-4342-A87E-CFFBA8F2C8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192513FD-63CA-4342-A87E-CFFBA8F2C8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192513FD-63CA-4342-A87E-CFFBA8F2C8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192513FD-63CA-4342-A87E-CFFBA8F2C8C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +141,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MemberDao\MemberDao.projitems*{12ce3f63-068d-4a87-8556-3e6a44a6af30}*SharedItemsImports = 13
 		MemberDao\MemberDao.projitems*{17b7106b-1577-4281-afb1-984f15fcebdc}*SharedItemsImports = 5
+		MemberDao\MemberDao.projitems*{192513fd-63ca-4342-a87e-cffba8f2c8c3}*SharedItemsImports = 5
 		MemberDao\MemberDao.projitems*{3f48d7b3-8cac-46de-866c-35fe84b67725}*SharedItemsImports = 5
 		MemberDao\MemberDao.projitems*{46e92167-f949-4b68-a818-3c5987d7b165}*SharedItemsImports = 5
 		MemberDao\MemberDao.projitems*{89138ecc-85b1-4ecb-b9ec-01bbccd8875a}*SharedItemsImports = 4

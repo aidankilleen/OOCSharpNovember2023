@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Member Form</h2>
+
+
+<form action="/Member/DoAdd" method="post">
+
+    <input name="name" placeholder="Enter your name"/><br />
+    <input name="email" placeholder="somebody@email.com" /><br />
+    <!--
+    <input type="checkbox" name="active"/><br />
+    -->
+    
+    @Html.CheckBox("active", false)
+   
+    <input 
+        class="btn btn-primary"
+        type="submit" value="Create"/>
+
+</form>

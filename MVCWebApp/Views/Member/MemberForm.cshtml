@@ -1,23 +1,39 @@
-﻿@*
+﻿@using MemberDao;
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+
+    Member member = ViewBag.member;
 }
-<h2>Member Form</h2>
+<h2>@ViewBag.Title</h2>
 
 
-<form action="/Member/DoAdd" method="post">
+<form action="@ViewBag.Action" method="post">
 
-    <input name="name" placeholder="Enter your name"/><br />
-    <input name="email" placeholder="somebody@email.com" /><br />
+    <input 
+        class="d-none"
+        type="hidden"
+        name="id"
+        value="@member.Id" READONLY/>
+    <input 
+        name="name" 
+        placeholder="Enter your name"
+        value="@member.Name"
+        /><br />
+    <input 
+        name="email" 
+        placeholder="somebody@email.com" 
+        value="@member.Email"/><br />
     <!--
     <input type="checkbox" name="active"/><br />
     -->
     
-    @Html.CheckBox("active", false)
-   
+    @Html.CheckBox("active", member.Active)
+    <br />
     <input 
         class="btn btn-primary"
-        type="submit" value="Create"/>
+        type="submit" value="@ViewBag.ButtonLabel"/>
 
 </form>

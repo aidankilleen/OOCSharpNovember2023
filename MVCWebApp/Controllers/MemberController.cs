@@ -50,15 +50,43 @@ namespace MVCWebApp.Controllers
 
         public IActionResult Add()
         {
+            ViewBag.Title = "Add Member";
+            ViewBag.Action = "/Member/DoAdd";
+            ViewBag.ButtonLabel = "Create";
+
+            ViewBag.Member = new Member();
             return View("MemberForm");
         }
 
         public IActionResult DoAdd(Member member)
         {
-
             MemberDao.MemberDao dao = new MemberDao.MemberDao();
 
             dao.AddMember(member);
+            dao.Close();
+
+            return Redirect("/Member");
+        }
+
+        public IActionResult Edit(int id)
+        {
+            ViewBag.Title = "Edit Member";
+            ViewBag.Action = "/Member/DoEdit";
+            ViewBag.ButtonLabel = "Save";
+
+            MemberDao.MemberDao dao = new MemberDao.MemberDao();
+            var member = dao.GetMember(id);
+            dao.Close();
+
+            ViewBag.Member = member;
+
+            return View("MemberForm");
+        }
+
+        public IActionResult DoEdit(Member member)
+        {
+            MemberDao.MemberDao dao = new MemberDao.MemberDao();
+            dao.UpdateMember(member);
             dao.Close();
 
             return Redirect("/Member");

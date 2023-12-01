@@ -80,27 +80,36 @@ namespace MemberDao
  
         public Member UpdateMember(Member member)
         {
-            string sql = $@"UPDATE members 
-                            SET 
-                                name = '{ member.Name }', 
-                                email='{ member.Email }', 
-                                active = { (member.Active ? 1 : 0) } 
-                            WHERE id= { member.Id }";
+            //string sql = $@"UPDATE members SET name = '{ member.Name }', email='{ member.Email }', active = { (member.Active ? 1 : 0) } WHERE id= { member.Id }";
+            string sql = "UPDATE members SET name=@Name, email=@Email, active=@Active WHERE id=@Id";
+
 
             SqliteCommand cmd = new SqliteCommand(sql, conn);
+
+            cmd.Parameters.Add(new SqliteParameter("@Name", member.Name));
+            cmd.Parameters.Add(new SqliteParameter("@Email", member.Email));
+            cmd.Parameters.Add(new SqliteParameter("@Active", member.Active));
+            cmd.Parameters.Add(new SqliteParameter("@Id", member.Id));
+
             cmd.ExecuteNonQuery();
             return member;
         }
         
         public Member AddMember(Member member)
         {
-            string sql = $@"INSERT INTO members
-                            (name, email, active)
-                            VALUES(
-                                '{ member.Name }', 
-                                '{ member.Email }', 
-                                 { (member.Active ? 1 : 0) })";
+            // string sql = $@"INSERT INTO members (name, email, active) VALUES('{ member.Name }', '{ member.Email }',{ (member.Active ? 1 : 0) })";
+            // ','',0);  --
+            // ','',0); drop table members; --
+
+
+            string sql = $@"INSERT INTO members (name, email, active) VALUES(@Name,@Email,@Active)";
+
             SqliteCommand cmd = new SqliteCommand(sql, conn);
+
+            cmd.Parameters.Add(new SqliteParameter("@Name", member.Name != null ? member.Name : ""));
+            cmd.Parameters.Add(new SqliteParameter("@Email", member.Email != null ? member.Email : ""));
+            cmd.Parameters.Add(new SqliteParameter("@Active", member.Active ? 1 : 0));
+
             cmd.ExecuteNonQuery();
 
             // Get the newly created id

@@ -6,11 +6,15 @@
 @{
 }
 
-<h1>@ViewBag.Title</h1>
+<h1><i class="fa fa-users"></i>@ViewBag.Title</h1>
+
+
+<button onclick="ConfirmBeforeSubmit()">Press Me</button>
+
 
 <a href="/Member/Add"
     class="btn btn-success">
-    Add Member
+    <i class="fa fa-user-plus"></i>
 </a>
 
 <table class="table">
@@ -36,7 +40,12 @@
                 <a 
                     href="/Member/ConfirmDelete/@m.Id" 
                     class="btn btn-danger btn-sm">
-                    Delete
+                    <i class="fa fa-trash"></i>
+                </a>
+                <a
+                    href="/Member/Edit/@m.Id"
+                    class="btn btn-primary btn-sm">
+                    <i class="fa fa-edit"></i>
                 </a>
             </td>
         </tr>
